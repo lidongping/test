@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.dhcc.pojo.Application" table="application">
+	<id name="id" column="id" type="java.lang.Integer">
+	<generator class="assigned"></generator>
+	</id>
+	<property name="name" column="name" type="java.lang.String"></property>
+	<property name="webName" column="webName" type="java.lang.String"></property>
+	<property name="status" column="status" type="java.lang.Integer"></property>
+	<property name="adName" column="adName" type="java.lang.String"></property>
+	<property name="applyDate" column="applyDate" type="java.sql.Date"></property>
+	<property name="detail" column="deail" type="java.lang.String"></property>
+</class>
+</hibernate-mapping>
